@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="goldLineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#AA7C11" stop-opacity="0.3" />
+    </linearGradient>
+    <linearGradient id="emeraldLineGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00B67A" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#00B67A" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#3DD99B" stop-opacity="1" />
+    </linearGradient>
+    <linearGradient id="areaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00B67A" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#00B67A" stop-opacity="0.0" />
+    </linearGradient>
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#030712" stop-opacity="0" />
+    </radialGradient>
+    <!-- Shadow filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Dark Canvas Base -->
+  <rect width="600" height="400" rx="16" fill="#070e1b" />
+  
+  <!-- Subtle Gold Radial Backdrop Glow -->
+  <circle cx="450" cy="150" r="250" fill="url(#glowGrad)" />
+
+  <!-- Grid System -->
+  <g stroke="#1e293b" stroke-width="0.75" stroke-dasharray="4,4">
+    <!-- Horizontal Gridlines -->
+    <line x1="50" y1="80" x2="550" y2="80" />
+    <line x1="50" y1="140" x2="550" y2="140" />
+    <line x1="50" y1="200" x2="550" y2="200" />
+    <line x1="50" y1="260" x2="550" y2="260" />
+    <line x1="50" y1="320" x2="550" y2="320" />
+    <!-- Vertical Gridlines -->
+    <line x1="120" y1="50" x2="120" y2="350" />
+    <line x1="200" y1="50" x2="200" y2="350" />
+    <line x1="280" y1="50" x2="280" y2="350" />
+    <line x1="360" y1="50" x2="360" y2="350" />
+    <line x1="440" y1="50" x2="440" y2="350" />
+    <line x1="520" y1="50" x2="520" y2="350" />
+  </g>
+
+  <!-- Chart Axis -->
+  <line x1="50" y1="350" x2="550" y2="350" stroke="#334155" stroke-width="1.5" />
+  <line x1="50" y1="50" x2="50" y2="350" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Area Under Trend Line -->
+  <path d="M 50,350 L 50,290 L 120,270 L 200,285 L 280,210 L 360,225 L 440,140 L 520,90 L 520,350 Z" 
+        fill="url(#areaGrad)" />
+
+  <!-- Gold Secondary Stable Trend Line -->
+  <path d="M 50,310 L 120,295 L 200,280 L 280,260 L 360,240 L 440,210 L 520,195" 
+        fill="none" stroke="url(#goldLineGrad)" stroke-width="2" stroke-dasharray="3,3" />
+
+  <!-- Primary Growth Trend Line (Emerald Green) -->
+  <path d="M 50,290 C 90,280 100,260 120,270 C 160,290 180,295 200,285 C 240,265 260,220 280,210 C 320,190 340,240 360,225 C 400,195 410,150 440,140 C 480,120 490,100 520,90" 
+        fill="none" stroke="url(#emeraldLineGrad)" stroke-width="4" filter="url(#glow)" />
+
+  <!-- Data Nodes (Glow Circles) -->
+  <circle cx="280" cy="210" r="5" fill="#3DD99B" stroke="#070e1b" stroke-width="1.5" />
+  <circle cx="440" cy="140" r="5" fill="#3DD99B" stroke="#070e1b" stroke-width="1.5" />
+  <circle cx="520" cy="90" r="7" fill="#3DD99B" stroke="#F8FAFC" stroke-width="2" filter="url(#glow)" />
+
+  <!-- Glassmorphic Info Card overlay -->
+  <g transform="translate(65, 70)">
+    <!-- Card Frame -->
+    <rect width="165" height="70" rx="8" fill="#0c152b" fill-opacity="0.8" stroke="#D4AF37" stroke-dasharray="" stroke-width="1" />
+    <!-- Text contents -->
+    <text x="15" y="25" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="700" fill="#94A3B8" letter-spacing="1">PORTFOLIO YIELD</text>
+    <text x="15" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="800" fill="#F8FAFC">+24.85%</text>
+    <text x="110" y="48" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" fill="#00B67A">▲ 3.2%</text>
+  </g>
+
+  <!-- Interactive Cursor Indicator -->
+  <line x1="520" y1="50" x2="520" y2="350" stroke="#D4AF37" stroke-width="1" stroke-dasharray="2,2" />
+  <g transform="translate(485, 30)">
+    <rect width="70" height="20" rx="4" fill="#D4AF37" />
+    <text x="35" y="14" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="800" fill="#030712" text-anchor="middle">INR 8.5 Cr+</text>
+  </g>
+</svg>

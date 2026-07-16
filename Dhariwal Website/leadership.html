@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Committee | Dhariwal Securities</title>
+  <meta name="description" content="Meet the Executive Board and Investment Committee directing Dhariwal Securities.">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       LIVE MARKET TICKER (TOP BAR)
+       ========================================== -->
+  <div class="ticker-wrap">
+    <div class="ticker-title">MARKETS LIVE</div>
+    <div class="ticker-scroll">
+      <!-- Live ticker items injected by JavaScript -->
+    </div>
+  </div>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo-wrapper">
+        <img src="static/images/logo.svg" alt="Dhariwal Securities Logo" style="width:100%; height:100%;">
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="why-choose-us.html">Why Choose Us</a>
+        <a href="leadership.html" class="active">Leadership</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html?action=login" class="nav-btn-mobile mobile-only-nav">Login</a>
+        <a href="contact.html?action=open" class="nav-btn-mobile mobile-only-nav">Open Account</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="contact.html?action=login" class="btn btn-secondary desktop-only-cta" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Login</a>
+        <a href="contact.html?action=open" class="btn btn-primary desktop-only-cta" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Open Account</a>
+        <button class="hamburger" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       EXECUTIVE COMMITTEE OVERVIEW
+       ========================================== -->
+  <section style="background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-base) 100%);">
+    <div class="container">
+      <span class="section-tag">Executive Committee</span>
+      <h1 class="section-title">The Governance <span>&amp; Strategy Board</span></h1>
+      <p class="section-desc">Our advisors bring deep capital markets insight, regulatory expertise, and academic rigor
+        to coordinate wealth compounding activities.</p>
+
+      <!-- Grid of 5 Team Members -->
+      <div class="team-grid" style="margin-top: 4rem;">
+        <!-- Exec 1 -->
+        <div class="team-card" data-exec-id="1">
+          <div class="team-photo-mock">RD</div>
+          <h4>Rameshwar Dhariwal</h4>
+          <p>Founder &amp; Chairman</p>
+          <span class="team-bio-peek">35+ Years in Capital Markets.<br><strong style="color: var(--primary-gold);">View
+              Profile &rarr;</strong></span>
+        </div>
+
+        <!-- Exec 2 -->
+        <div class="team-card" data-exec-id="2">
+          <div class="team-photo-mock">AD</div>
+          <h4>Dr. Aditi Dhariwal</h4>
+          <p>MD &amp; Head of PMS</p>
+          <span class="team-bio-peek">PhD Financial Economics (LSE).<br><strong style="color: var(--primary-gold);">View
+              Profile &rarr;</strong></span>
+        </div>
+
+        <!-- Exec 3 -->
+        <div class="team-card" data-exec-id="3">
+          <div class="team-photo-mock">VM</div>
+          <h4>Vikram Malhotra</h4>
+          <p>Chief Investment Officer</p>
+          <span class="team-bio-peek">22+ Years in Portfolio Strategy.<br><strong
+              style="color: var(--primary-gold);">View Profile &rarr;</strong></span>
+        </div>
+
+        <!-- Exec 4 -->
+        <div class="team-card" data-exec-id="4">
+          <div class="team-photo-mock">SS</div>
+          <h4>Satish Shah</h4>
+          <p>Compliance Officer</p>
+          <span class="team-bio-peek">18+ Years Regulatory Audits.<br><strong style="color: var(--primary-gold);">View
+              Profile &rarr;</strong></span>
+        </div>
+
+        <!-- Exec 5 -->
+        <div class="team-card" data-exec-id="5">
+          <div class="team-photo-mock">AS</div>
+          <h4>Ananya Sen</h4>
+          <p>Head of Wealth Advisory</p>
+          <span class="team-bio-peek">15+ Years Family Office Setup.<br><strong style="color: var(--primary-gold);">View
+              Profile &rarr;</strong></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BIO MODAL POPUP WINDOW
+       ========================================== -->
+  <div class="modal-overlay">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-header">
+        <div class="modal-photo-mock">RD</div>
+        <div class="modal-title">
+          <h3>Rameshwar Dhariwal</h3>
+          <p>Founder &amp; Chairman</p>
+        </div>
+      </div>
+      <div class="modal-body">
+        Bio text loaded dynamically by main.js...
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       FOOTER & COMPLIANCE
+       ========================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="static/images/logo.svg" alt="Dhariwal Securities Logo" class="footer-logo">
+          <p>Established in 1991, Dhariwal Securities is a leading boutique financial services provider dedicated to
+            institutional-grade stock broking, comprehensive portfolio design, and dedicated wealth preservation
+            strategies.</p>
+          <div style="display: flex; gap: 1rem; font-size: 1.2rem; color: var(--primary-gold);">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Bespoke Offerings</h4>
+          <ul>
+            <li><a href="services.html">Portfolio Management (PMS)</a></li>
+            <li><a href="services.html">Wealth Management &amp; Estate</a></li>
+            <li><a href="services.html">Equity Broking &amp; Trading</a></li>
+            <li><a href="services.html">Mutual Funds &amp; Bonds</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Intelligence Desk</h4>
+          <ul>
+            <li><a href="research.html">Daily Market Bulletins</a></li>
+            <li><a href="research.html">Equity Research Reports</a></li>
+            <li><a href="research.html">Corporate Actions Summary</a></li>
+            <li><a href="research.html">Download Forms</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Corporate office</h4>
+          <ul>
+            <li><a href="about.html">Executive Leadership</a></li>
+            <li><a href="about.html">History &amp; Legacy</a></li>
+            <li><a href="contact.html">Reach Us</a></li>
+            <li><a href="about.html">Investor Grievance Cell</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-compliance">
+        <div class="compliance-grid">
+          <div class="compliance-item">
+            <h5>SEBI REGISTRATION</h5>
+            <p>INZ000293837 (NSE / BSE)</p>
+          </div>
+          <div class="compliance-item">
+            <h5>DP MEMBERSHIP</h5>
+            <p>CDSL DP ID: 12089400</p>
+          </div>
+          <div class="compliance-item">
+            <h5>ARN REGISTRATION</h5>
+            <p>AMFI Registered ARN-148209</p>
+          </div>
+          <div class="compliance-item">
+            <h5>CIN NUMBER</h5>
+            <p>U67120MH1991PTC061245</p>
+          </div>
+        </div>
+
+        <p class="compliance-warning">
+          <strong>Regulatory Disclosures &amp; Disclaimers:</strong><br>
+          Dhariwal Securities Private Limited. Registered Office: 1205, Dhariwal Towers, Nariman Point, Mumbai - 400021.
+          Tel: +91 22 6902 4500. SEBI Registration numbers: INZ000293837 (Trading Member of NSE &amp; BSE in Cash,
+          F&amp;O and Debt Segments), IN-DP-452-2020 (CDSL Depository Participant). Portfolio Manager Registration
+          Number: INP000007892. Investment in securities market are subject to market risks, read all the related
+          documents carefully before investing. Brokerage will not exceed the SEBI prescribed limits. Registration
+          granted by SEBI, membership of a SEBI recognized stock exchange and certification from NISM in no way
+          guarantee performance of the intermediary or provide any assurance of returns to investors.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dhariwal Securities Private Limited. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">SEBI Investor Charter</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="static/js/main.js"></script>
+</body>
+
+</html>

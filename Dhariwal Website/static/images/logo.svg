@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 85" width="100%" height="100%">
+  <defs>
+    <!-- Gold Metallic Gradients -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#AA7C11" />
+      <stop offset="22%" stop-color="#F2C542" />
+      <stop offset="45%" stop-color="#F3E5AB" />
+      <stop offset="70%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#AA7C11" />
+    </linearGradient>
+  </defs>
+
+  <!-- Emblem / Monogram Circle (Left side, height matched to 85px) -->
+  <g transform="translate(5, 0)">
+    <!-- Outer Gold Ring -->
+    <circle cx="42" cy="42" r="38" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" />
+    <!-- Inner circle fill (deep navy/obsidian) -->
+    <circle cx="42" cy="42" r="37" fill="#040814" />
+    
+    <!-- Bold Serif 'D' construction -->
+    <!-- Stem -->
+    <rect x="30" y="23" width="5" height="38" fill="url(#goldGrad)" />
+    <!-- Top Serif -->
+    <rect x="25" y="23" width="15" height="4" fill="url(#goldGrad)" />
+    <!-- Bottom Serif -->
+    <rect x="25" y="57" width="15" height="4" fill="url(#goldGrad)" />
+    <!-- Loop of the 'D' -->
+    <path d="M 35,23 C 48,23 57,28 57,42 C 57,56 48,61 35,61" fill="none" stroke="url(#goldGrad)" stroke-width="5.5" stroke-linecap="square" />
+    
+    <!-- Growth Bars inside loop -->
+    <!-- Bar 1 (Short) -->
+    <rect x="41" y="44" width="3.5" height="10" fill="url(#goldGrad)" />
+    <!-- Bar 2 (Tall) -->
+    <rect x="47" y="35" width="3.5" height="19" fill="url(#goldGrad)" />
+    
+    <!-- Swooping Gold Arrow -->
+    <!-- Shaft -->
+    <path d="M 28,58 C 36,52 48,44 65,30" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" />
+    <!-- Arrowhead -->
+    <path d="M 57,30 L 65,30 L 65,38" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Corporate Typography (Right side, scaled up by 25%, aligned) -->
+  <g transform="translate(100, 16)">
+    <!-- Primary Name -->
+    <text x="0" y="28" 
+          font-family="'Playfair Display', 'Georgia', serif" 
+          font-size="34" 
+          font-weight="bold" 
+          fill="#F8FAFC" 
+          letter-spacing="1.2">D H A R I W A L</text>
+    <!-- Subtitle / Business Focus -->
+    <text x="2" y="54" 
+          font-family="'Plus Jakarta Sans', 'Arial', sans-serif" 
+          font-size="15" 
+          font-weight="700" 
+          fill="url(#goldGrad)" 
+          letter-spacing="6.5">SECURITIES</text>
+  </g>
+</svg>

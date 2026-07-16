@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Dhariwal Securities</title>
+  <meta name="description" content="Explore custom wealth architectures, equity trading desks, and PMS models at Dhariwal Securities.">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       LIVE MARKET TICKER (TOP BAR)
+       ========================================== -->
+  <div class="ticker-wrap">
+    <div class="ticker-title">MARKETS LIVE</div>
+    <div class="ticker-scroll">
+      <!-- Live ticker items injected by JavaScript -->
+    </div>
+  </div>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo-wrapper">
+        <img src="static/images/logo.svg" alt="Dhariwal Securities Logo" style="width:100%; height:100%;">
+      </a>
+      
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="why-choose-us.html">Why Choose Us</a>
+        <a href="leadership.html">Leadership</a>
+        <a href="research.html">Research</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html?action=login" class="nav-btn-mobile mobile-only-nav">Login</a>
+        <a href="contact.html?action=open" class="nav-btn-mobile mobile-only-nav">Open Account</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="contact.html?action=login" class="btn btn-secondary desktop-only-cta" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Login</a>
+        <a href="contact.html?action=open" class="btn btn-primary desktop-only-cta" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Open Account</a>
+        <button class="hamburger" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       SERVICES DETAILED PANE LAYOUT
+       ========================================== -->
+  <section style="background: linear-gradient(180deg, var(--bg-deep) 0%, var(--bg-base) 100%);">
+    <div class="container">
+      <span class="section-tag">Corporate Offerings</span>
+      <h1 class="section-title">Bespoke <span>Investment Architectures</span></h1>
+      <p class="section-desc">We structure investment solutions with surgical precision, designed to withstand cyclical market inflections and protect generational assets.</p>
+
+      <div class="services-tabs-container">
+        <!-- Sidebar Navigation -->
+        <div class="services-list-nav">
+          <button class="service-nav-btn active" data-service="pms">
+            <span>Portfolio Management (PMS)</span> <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button class="service-nav-btn" data-service="wealth">
+            <span>Private Wealth Management</span> <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button class="service-nav-btn" data-service="broking">
+            <span>Equity Broking &amp; Trading</span> <i class="fa-solid fa-chevron-right"></i>
+          </button>
+          <button class="service-nav-btn" data-service="fixed">
+            <span>Bonds &amp; Fixed Income</span> <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <!-- Detail Panes -->
+        <div>
+          <!-- PMS Pane -->
+          <div class="service-pane-content active" id="service-pane-pms">
+            <h2 class="service-pane-title">Discretionary <span>Equity PMS Mandates</span></h2>
+            <p class="service-pane-desc">
+              Our PMS offering is designed for Ultra-HNIs and family trusts seeking alpha-generating equity strategies. Administered by our MD &amp; LSE Alumna Dr. Aditi Dhariwal, we construct high-conviction portfolios backed by intensive quant modeling.
+            </p>
+            
+            <div class="service-features-grid">
+              <div class="pane-feat-card">
+                <h5>Structured Alpha Strategy</h5>
+                <p>Concentrated model portfolios (15-22 stock names) emphasizing compounders with high ROE, zero promoter pledge, and strong pricing power.</p>
+              </div>
+              <div class="pane-feat-card">
+                <h5>Risk Mitigation Framework</h5>
+                <p>Real-time sector weight caps (max 25% exposure) and strict stop-loss rules managed by proprietary algorithms to contain tail risk.</p>
+              </div>
+              <div class="pane-feat-card">
+                <h5>Absolute Ownership Transparency</h5>
+                <p>Securities are held directly in your individual demat account. Every trade, transaction cost, and corporate action is viewable in real-time.</p>
+              </div>
+              <div class="pane-feat-card">
+                <h5>Direct Fund Manager Access</h5>
+                <p>Quarterly portfolio review calls directly with the CIO and Investment Committee to keep you aligned with current market allocations.</p>
+              </div>
+            </div>
+            
+            <a href="contact.html?interest=pms" class="btn btn-primary">Request PMS Prospectus</a>
+          </div>
+
+          <!-- Wealth Management Pane -->
+          <div class="service-pane-content" id="service-pane-wealth">
+            <h2 class="service-pane-title">Holistic <span>Private Wealth Management</span></h2>
+            <p class="service-pane-desc">
+              We look beyond basic asset accumulation to formulate comprehensive family office architectures, estate transfer pathways, and global asset allocation matrices.
+            </p>
+            
+            <div class="service-features-grid">
+              <div class="pane-feat-card">
+                <h5>Generational Wealth Preservation</h5>
+                <p>We work with leading legal partners to construct family trusts, private wills, and corporate holding structures to ensure seamless succession.</p>
+              </div>
+              <div class="pane-feat-card">
+                <h5>Tax Optimizations</h5>
+                <p>Comprehensive structuring of short/long-term capital gains, business transition exemptions, and cross-border assets under Indian tax codes.</p>
+              </div>
+              <div class="pane-feat-card">
+                <h5>Treasury Yield Management</h5>
+                <p>Tailored strategies for corporate promoters looking to optimize institutional capital liquidity through premium debt instruments.</p>
+              </div>
+              <div class="pane-feat-card">
+                <h5>Discreet Advisory</h5>
+                <p>A single dedicated Senior Wealth Partner manages your entire account, ensuring absolute confidentiality and priority execution.</p>
+              </div>
+            </div>
+            
+            <a href="contact.html?interest=wealth" class="btn btn-primary">Connect with Wealth Partner</a>
+          </div>
+
+          <!-- Broking Pane -->
+          <div class="service-pane-content" id="service-pane-broking">
+            <h2 class="service-pane-title">Institutional Grade <span>Equity Trading Desks</span></h2>
+            <p class="service-pane-desc">
+              Trade equities, options, and futures across NSE and BSE with high-speed execution interfaces, customized leverage facilities, and robust compliance controls.
+            </p>
+            
+            <div class="service-features-grid">
+              <div class="pane-feat-card">
+                <h5>Execution Desks</h5>
+                <p>Direct access to dedicated dealers at Nariman Point or custom corporate API integrations for high-volume trading accounts.</p>
+              </div>
+              <div class="pane-feat-card">
+                <h5>Competitive Brokerage</h5>
+                <p>Transparent pricing capped at ₹20 per trade or custom volume-tiered institutional percentages, with absolute zero hidden costs.</p>
+              </div>
+              <div class="pane-feat-card">
+                <h5>Robust Security Controls</h5>
+                <p>Advanced multi-factor authentication, CDSL depository vaults, and SEBI-aligned client margin allocations.</p>
+              </div>
+              <div class="pane-feat-card">
+                <h5>Research Integration</h5>
+                <p>Daily pre-market reports, corporate action updates, and block trade notifications delivered directly to your execution interface.</p>
+              </div>
+            </div>
+            
+            <a href="contact.html?interest=broking" class="btn btn-primary">Open Trading Account</a>
+          </div>
+
+          <!-- Fixed Income Pane -->
+          <div class="service-pane-content" id="service-pane-fixed">
+            <h2 class="service-pane-title">Bonds &amp; <span>Fixed Income Advisory</span></h2>
+            <p class="service-pane-desc">
+              Secure stable yields through curated AAA-rated corporate bonds, sovereign gold securities, tax-free municipal bonds, and capital gains structures.
+            </p>
+            
+            <div class="service-features-grid">
+              <div class="pane-feat-card">
+                <h5>Sovereign &amp; PSU Bonds</h5>
+                <p>Highest-grade security investments with capital safety guarantees backing consistent income flows.</p>
+              </div>
+              <div class="pane-feat-card">
+                <h5>Tax-Free Yield Optimization</h5>
+                <p>Sourcing institutional secondary-market municipal and NHAI tax-free issues to boost post-tax returns for individuals in high brackets.</p>
+              </div>
+              <div class="pane-feat-card">
+                <h5>Arbitrage Opportunities</h5>
+                <p>Low-risk asset rebalancing strategies capturing pricing differentials across spot and derivative segments.</p>
+              </div>
+              <div class="pane-feat-card">
+                <h5>Mutual Fund Allocations</h5>
+                <p>Bespoke fund basket creations selecting top-tier performing debt funds under strict duration filters.</p>
+              </div>
+            </div>
+            
+            <a href="contact.html?interest=fixed" class="btn btn-primary">Speak to Bond Advisor</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================
+           COMPARISON MATRIX
+           ========================================== -->
+      <div class="comparison-table-wrapper">
+        <h3 class="section-title" style="font-size: 2rem; margin-top: 6rem; text-align: center;">Investment Offerings <span>Matrix</span></h3>
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Portfolio Management (PMS)</th>
+              <th>Investment Advisory</th>
+              <th>Direct Trading Account</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Minimum Outlay</strong></td>
+              <td>₹50 Lakhs (SEBI Mandated)</td>
+              <td>₹10 Lakhs Portfolio Size</td>
+              <td>No Minimum Limit</td>
+            </tr>
+            <tr>
+              <td><strong>Execution Responsibility</strong></td>
+              <td>Discretionary (Fund Manager Handles)</td>
+              <td>Client Executes (Based on Recommendations)</td>
+              <td>Self-Executed (Brokerage terms apply)</td>
+            </tr>
+            <tr>
+              <td><strong>Fee Structure</strong></td>
+              <td>Management Fee (1.5% - 2%) + Performance Fee</td>
+              <td>Flat Annual Advisory Fee</td>
+              <td>Trade-Based Flat Brokerage (Max ₹20)</td>
+            </tr>
+            <tr>
+              <td><strong>Direct Stock Ownership</strong></td>
+              <td>Yes (Individual Demat Account)</td>
+              <td>Yes (Client's Own Account)</td>
+              <td>Yes (Client's Own Account)</td>
+            </tr>
+            <tr>
+              <td><strong>Reporting Frequency</strong></td>
+              <td>Real-time Digital Portal + Monthly Reports</td>
+              <td>Quarterly Portfolio Reviews</td>
+              <td>Daily contract notes &amp; ledger access</td>
+            </tr>
+            <tr>
+              <td><strong>Best Suited For</strong></td>
+              <td>High Net Worth Families &amp; Corporates</td>
+              <td>Active Investors needing expert guidance</td>
+              <td>Self-directed traders and long-term accumulators</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER & COMPLIANCE
+       ========================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="static/images/logo.svg" alt="Dhariwal Securities Logo" class="footer-logo">
+          <p>Established in 1991, Dhariwal Securities is a leading boutique financial services provider dedicated to institutional-grade stock broking, comprehensive portfolio design, and dedicated wealth preservation strategies.</p>
+          <div style="display: flex; gap: 1rem; font-size: 1.2rem; color: var(--primary-gold);">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links-col">
+          <h4>Bespoke Offerings</h4>
+          <ul>
+            <li><a href="services.html">Portfolio Management (PMS)</a></li>
+            <li><a href="services.html">Wealth Management &amp; Estate</a></li>
+            <li><a href="services.html">Equity Broking &amp; Trading</a></li>
+            <li><a href="services.html">Mutual Funds &amp; Bonds</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Intelligence Desk</h4>
+          <ul>
+            <li><a href="research.html">Daily Market Bulletins</a></li>
+            <li><a href="research.html">Equity Research Reports</a></li>
+            <li><a href="research.html">Corporate Actions Summary</a></li>
+            <li><a href="research.html">Download Forms</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Corporate office</h4>
+          <ul>
+            <li><a href="about.html">Executive Leadership</a></li>
+            <li><a href="about.html">History &amp; Legacy</a></li>
+            <li><a href="contact.html">Reach Us</a></li>
+            <li><a href="about.html">Investor Grievance Cell</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-compliance">
+        <div class="compliance-grid">
+          <div class="compliance-item">
+            <h5>SEBI REGISTRATION</h5>
+            <p>INZ000293837 (NSE / BSE)</p>
+          </div>
+          <div class="compliance-item">
+            <h5>DP MEMBERSHIP</h5>
+            <p>CDSL DP ID: 12089400</p>
+          </div>
+          <div class="compliance-item">
+            <h5>ARN REGISTRATION</h5>
+            <p>AMFI Registered ARN-148209</p>
+          </div>
+          <div class="compliance-item">
+            <h5>CIN NUMBER</h5>
+            <p>U67120MH1991PTC061245</p>
+          </div>
+        </div>
+        
+        <p class="compliance-warning">
+          <strong>Regulatory Disclosures &amp; Disclaimers:</strong><br>
+          Dhariwal Securities Private Limited. Registered Office: 1205, Dhariwal Towers, Nariman Point, Mumbai - 400021. Tel: +91 22 6902 4500. SEBI Registration numbers: INZ000293837 (Trading Member of NSE &amp; BSE in Cash, F&amp;O and Debt Segments), IN-DP-452-2020 (CDSL Depository Participant). Portfolio Manager Registration Number: INP000007892. Investment in securities market are subject to market risks, read all the related documents carefully before investing. Brokerage will not exceed the SEBI prescribed limits. Registration granted by SEBI, membership of a SEBI recognized stock exchange and certification from NISM in no way guarantee performance of the intermediary or provide any assurance of returns to investors.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Dhariwal Securities Private Limited. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">SEBI Investor Charter</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="static/js/main.js"></script>
+</body>
+</html>
